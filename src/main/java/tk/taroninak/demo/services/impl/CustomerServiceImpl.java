@@ -28,7 +28,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     @Transactional(readOnly = true)
     public Customer getById(long id) {
-        return customerRepository.getOne(id);
+        return customerRepository.findOneById(id).orElseThrow();
     }
 
     @Override

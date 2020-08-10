@@ -1,6 +1,6 @@
-package tk.taroninak.demo.services;
+package tk.taroninak.demo.dtos;
 
-public class AddressCreationRequest {
+public class AddressCreationRequestDto {
     private String type;
 
     private String city;

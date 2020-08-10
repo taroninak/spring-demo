@@ -1,6 +1,8 @@
 package tk.taroninak.demo.dtos;
 
 public class AddressDto {
+    private Long id;
+
     private String type;
 
     private String city;
@@ -8,6 +10,14 @@ public class AddressDto {
     private String country;
 
     private String addressLine;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getType() {
         return type;
