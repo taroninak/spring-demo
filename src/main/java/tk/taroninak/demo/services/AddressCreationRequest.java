@@ -1,4 +1,4 @@
-package tk.taroninak.demo.dtatatypes;
+package tk.taroninak.demo.services;
 
 public class AddressCreationRequest {
 }

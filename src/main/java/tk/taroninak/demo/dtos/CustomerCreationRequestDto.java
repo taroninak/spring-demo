@@ -1,6 +1,7 @@
-package tk.taroninak.demo.dtatatypes;
+package tk.taroninak.demo.dtos;
 
-public class CustomerCreationRequest {
+
+public class CustomerCreationRequestDto {
     private String firstName;
 
     private String lastName;
@@ -41,3 +42,4 @@ public class CustomerCreationRequest {
         this.email = email;
     }
 }
+

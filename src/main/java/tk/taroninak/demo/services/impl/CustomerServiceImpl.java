@@ -3,7 +3,7 @@ package tk.taroninak.demo.services.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import tk.taroninak.demo.dtatatypes.CustomerCreationRequest;
+import tk.taroninak.demo.services.CustomerCreationRequest;
 import tk.taroninak.demo.entities.Customer;
 import tk.taroninak.demo.repositories.CustomerRepository;
 import tk.taroninak.demo.services.CustomerService;
@@ -40,8 +40,7 @@ public class CustomerServiceImpl implements CustomerService {
         customer.setPhoneNumber(request.getPhoneNumber());
         customer.setEmail(request.getEmail());
 
-        Customer saved = customerRepository.save(customer);
-        return saved;
+        return customerRepository.save(customer);
     }
 
     @Override

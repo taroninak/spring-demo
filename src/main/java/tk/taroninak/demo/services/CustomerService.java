@@ -1,7 +1,6 @@
 package tk.taroninak.demo.services;
 
 import org.springframework.transaction.annotation.Transactional;
-import tk.taroninak.demo.dtatatypes.CustomerCreationRequest;
 import tk.taroninak.demo.entities.Customer;
 
 import java.util.List;

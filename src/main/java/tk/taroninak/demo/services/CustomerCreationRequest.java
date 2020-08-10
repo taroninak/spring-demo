@@ -1,10 +1,6 @@
-package tk.taroninak.demo.dtos;
+package tk.taroninak.demo.services;
 
-import java.util.Set;
-
-public class CustomerDto {
-    private Long id;
-
+public class CustomerCreationRequest {
     private String firstName;
 
     private String lastName;
@@ -12,16 +8,6 @@ public class CustomerDto {
     private String phoneNumber;
 
     private String email;
-
-    private Set<AddressDto> addresses;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getFirstName() {
         return firstName;
@@ -53,13 +39,5 @@ public class CustomerDto {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Set<AddressDto> getAddresses() {
-        return addresses;
-    }
-
-    public void setAddresses(Set<AddressDto> addresses) {
-        this.addresses = addresses;
     }
 }
